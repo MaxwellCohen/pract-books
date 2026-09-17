@@ -1,19 +1,15 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
-    "types": [
-      "vite/client",
-      "@pracht/vite-plugin/virtual"
-    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["vite/client", "@pracht/vite-plugin/virtual"],
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "strict": true,

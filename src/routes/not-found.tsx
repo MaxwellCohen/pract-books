@@ -1,21 +1,20 @@
+import { Link } from '@pracht/core';
+import { Button } from '@/components/ui/button';
+import { EmptyState } from '@/components/ui/empty-state';
+
 export function head() {
   return {
-    title: "Page not found",
-    meta: [{ content: "noindex", name: "robots" }],
+    meta: [{ content: 'noindex', name: 'robots' }],
+    title: 'Page not found · Pracht Books',
   };
 }
 
 export function Component() {
   return (
-    <section>
-      <p style={{ color: "#555", marginBottom: "8px" }}>404</p>
-      <h1 style={{ fontSize: "2.5rem", lineHeight: 1.1, margin: "0 0 16px" }}>Page not found.</h1>
-      <p style={{ fontSize: "1.1rem", lineHeight: 1.6, marginBottom: "24px" }}>
-        The page you asked for does not exist. It may have moved, or the link may be wrong.
-      </p>
-      {/* A plain anchor keeps this page independent of the route table.
-          Use a typed <Link> once you want client-side navigation. */}
-      <a href="/">Back to home</a>
-    </section>
+    <EmptyState body="That page isn't in the catalog." title="Page not found">
+      <Link className="mt-1" route="home">
+        <Button variant="secondary">Back to the shelf</Button>
+      </Link>
+    </EmptyState>
   );
 }

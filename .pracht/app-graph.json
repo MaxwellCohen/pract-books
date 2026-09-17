@@ -1,0 +1,44 @@
+{
+  "prachtGraphVersion": 2,
+  "mode": "manifest",
+  "routes": [
+    {
+      "file": "./routes/home.tsx",
+      "hydration": null,
+      "id": "home",
+      "loaderCache": null,
+      "loaderFile": null,
+      "middleware": [],
+      "path": "/",
+      "prefetch": null,
+      "render": "ssr",
+      "revalidate": null,
+      "shell": "public",
+      "shellFile": "./shells/public.tsx",
+      "speculation": null,
+      "streaming": null
+    },
+    {
+      "file": "./routes/book.tsx",
+      "hydration": null,
+      "id": "book",
+      "loaderCache": null,
+      "loaderFile": null,
+      "middleware": [],
+      "path": "/:id",
+      "prefetch": null,
+      "render": "ssr",
+      "revalidate": null,
+      "shell": "public",
+      "shellFile": "./shells/public.tsx",
+      "speculation": null,
+      "streaming": null
+    }
+  ],
+  "api": [],
+  "capabilities": [],
+  "mcpEndpoint": null,
+  "mcpAuthenticated": false,
+  "mcpAuth": null,
+  "constraints": []
+}

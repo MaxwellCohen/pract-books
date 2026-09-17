@@ -31,7 +31,7 @@ This app uses **manifest routing**.
 - `src/routes/not-found.tsx` — not-found page, wired via `notFound` in the manifest
 - `src/shells/` — shell components (layouts)
 - `src/api/` — API route handlers
-- `vite.config.ts` — Vite config with the Cloudflare Workers adapter
+- `vite.config.ts` — Vite config with Vercel, Netlify, or Cloudflare adapters
 - `src/styles/global.css` — Tailwind CSS entry stylesheet, imported by the shell
 - `wrangler.jsonc` — Cloudflare Workers configuration
 - `src/env.d.ts` — TypeScript types for Cloudflare bindings

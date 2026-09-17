@@ -1,9 +1,10 @@
-import "@pracht/core";
-declare module "@pracht/core" {
+import '@pracht/core';
+
+declare module '@pracht/core' {
   interface Register {
-    context: {
-      env: Env;
-      executionContext: ExecutionContext;
+    env: {
+      API_DELAY_MS?: string;
+      POSTGRES_URL?: string;
     };
   }
 }

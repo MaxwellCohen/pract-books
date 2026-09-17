@@ -1,9 +1,14 @@
 dist
 node_modules
 .netlify
+netlify/functions
 .wrangler
 .vercel
 .env*
+!.env.sample
 !.env.example
 .dev.vars
+/playwright-report/
+/test-results/
+*_import_checkpoint.json
 # Keep .pracht/app-graph.json committed — it is the `pracht plan` snapshot.
